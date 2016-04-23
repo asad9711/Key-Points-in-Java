@@ -7,7 +7,7 @@ class Parent
 	// }
 	static int x=3;
 	static {
-		System.out.println("static block of parent0");
+		System.out.println("static block of parent0");//static block gets executed at the class loadig time
 	}
 	
 }
@@ -18,7 +18,7 @@ class Child
 		System.out.println(Parent.x);
 		new Child();
 	}
-	{
+	{                   //init block gets executed at the time if constructor
 		System.out.println("init block");
 	}
 }
